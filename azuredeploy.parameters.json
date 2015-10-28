@@ -14,10 +14,10 @@
     "dnsNameForPublicIP": {
       "value": "aca4321"
     },
-    "location":{
-      "value": "West Us"
+    "location": {
+      "value": "West US"
     },
-    "sizeOfDiskInGB":{
+    "sizeOfDiskInGB": {
       "value": "20"
     }
   }

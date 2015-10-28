@@ -26,15 +26,15 @@
         "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
       }
     },
-    "location":{
+    "location": {
       "type": "string",
       "defaultValue": "West US",
       "allowedValues": [
         "West US",
-        "West US 2"
+        "East US 2"
       ],
       "metadata": {
-        "description":"Opciones restringidas de Storage Premium en US"
+        "description": "Restrict choices"
       }
     },
     "windowsOSVersion": {
@@ -177,15 +177,15 @@
             "caching": "ReadWrite",
             "createOption": "FromImage"
           },
-          "dataDisks":[
+          "dataDisks": [
             {
               "name": "datadisk1",
-              "diskSizeGB":"[parameters('SizeOfDiskInGB')]",
+              "diskSizeGB": "[parameters('sizeOfDiskInGB')]",
               "lun": 0,
               "vhd": {
-                "Uri":"[variables('dataDisk1VhdName')]"
+                "Uri": "[variables('dataDisk1VhdName')]"
               },
-              "creationOption": "Empty"
+              "createOption": "Empty"
             }
           ]
         },
